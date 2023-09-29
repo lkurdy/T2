@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import BtnHome from '../../assets/btn-home.png';
 import BtnPlay from '../../assets/btn-play.png';

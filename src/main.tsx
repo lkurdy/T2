@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components'
 
-import Error from './pages/Error/';
-import Home from './pages/Home/';
+import Error from './pages/Error';
+import Home from './pages/Home';
 
-import Header from './components/Header/';
-import Footer from './components/Footer/';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import Background from './assets/background.gif'
 
 const GlobalStyle = createGlobalStyle`

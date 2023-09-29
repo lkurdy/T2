@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components'
 
 const Container = styled.main`
@@ -9,7 +8,7 @@ const Container = styled.main`
 	text-align: center;
 	font-size: 55px`
 
-function App() {
+function Home() {
   return (
     <Container>
 		Welcome to our transcendence !
@@ -17,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
