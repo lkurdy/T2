@@ -6,16 +6,16 @@ const Container = styled.main`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 30px
 `
 
 const ErrorLogo = styled.img`
 	max-width: 800px;
+	margin-top: -200px;
 `
 
 const Title = styled.h1`
-	margin-top: 0px;
 	font-weight: 300;
+	margin-top: -20px;
 `
 
 const SubTitle = styled.h2`

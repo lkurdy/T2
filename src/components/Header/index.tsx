@@ -1,58 +1,71 @@
 import React from 'react';
-import styled from 'styled-components'
-import HeaderLogoName from '../../assets/logo42.png'
-import HeaderLogoPong from '../../assets/logoPong.png'
-import BtnPlay from '../../assets/btn-play.png'
-import BtnProfile from '../../assets/btn-profile.jpg'
-
-import { Link } from 'react-router-dom'
+import styled from 'styled-components';
+import BtnHome from '../../assets/btn-home.png';
+import BtnPlay from '../../assets/btn-play.png';
+import BtnChat from '../../assets/btn-chat.png';
+import BtnProfile from '../../assets/btn-profile.jpg';
+import { Link } from 'react-router-dom';
 
 const Container = styled.header`
-	display: flex
-	justify-content: flex-start;`
+	display: flex;
+	justify-content: flex-start;
+`;
 
-const HeaderPong = styled.img`
-	height: 180px;
-	margin: 25px;`
-
-const HeaderName = styled.img`
-	height: 60px;
-	position: absolute;
-	top: 133px;
-	left: 115px;`
+const HomeLogo = styled.img`
+	height: 160px;
+	margin-top: -50px;
+	transition: height 0.2s;
+	&:hover {
+		height: 165px;
+		}
+`;
 
 const NavContent = styled.nav`
 	display: flex;
-	justify-content: flex-end;`
+	justify-content: flex-start;
+	margin-left: auto;
+`;
 
 const StyledLink = styled(Link)`
 	text-decoration: none;
 	font-size: 18px;
-	margin: -125px 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding-right: 25px;
-	transition: font-size 0.2s;
-		&:hover{font-size: 20px}`
+	margin: 100px 25px;
+`;
 
-const HeaderLogo = styled.img`
-	height: 60px;`
+const NavLogo = styled.img`
+	height: 60px;
+	transition: height 0.2s;
+	&:hover {
+		height: 65px;
+		}
+`;
 
-function Header()
-{
-	return (<Container>
-				<StyledLink to="/">
-					<HeaderPong src={HeaderLogoPong}/>
-					<HeaderName src={HeaderLogoName} />
+function Header() {
+	return (
+		<Container>
+			<StyledLink to="/">
+				<HomeLogo src={BtnHome} />
+			</StyledLink>
+			<NavContent>
+				<StyledLink to="/game">
+					<NavLogo src={BtnPlay} />
+					Play
 				</StyledLink>
-				<NavContent>
-					<StyledLink to="/game">
-						<HeaderLogo src={BtnPlay} />Play
-					</StyledLink>
-					<StyledLink to="/chat">Chat</StyledLink>
-					<StyledLink to="/game">
-						<HeaderLogo src={BtnProfile} />Profile
-					</StyledLink>
-				</NavContent>
-			</Container>);
+				<StyledLink to="/chat">
+					<NavLogo src={BtnChat} />
+					Chat
+				</StyledLink>
+				<StyledLink to="/game">
+					<NavLogo src={BtnProfile} />
+					Profile
+				</StyledLink>
+			</NavContent>
+		</Container>
+		);
 }
 
 export default Header;

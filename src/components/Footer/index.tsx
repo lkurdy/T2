@@ -9,13 +9,11 @@ const Container = styled.footer`
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	font-size: 18px;
-`
+	font-size: 18px;`
 
 const NamesContainer = styled.div`
 	display: flex;
-	flex-direction: row;
-`
+	flex-direction: row;`
 
 const StyledLink = styled(Link)`
 	text-decoration: none;
@@ -23,8 +21,7 @@ const StyledLink = styled(Link)`
 	margin-top: 10px;
 	padding: 15px;
 	transition: font-size 0.2s;
-	&:hover{font-size: 20px}
-`
+	&:hover{font-size: 20px}`
 
 function Footer()
 {
@@ -35,6 +32,7 @@ function Footer()
 					<StyledLink to="https://profile.intra.42.fr/users/lkurdy" target="_blank">lkurdy</StyledLink>
 					<StyledLink to="https://profile.intra.42.fr/users/mabid" target="_blank">mabid</StyledLink>
 					<StyledLink to="https://profile.intra.42.fr/users/aperis" target="_blank">aperis</StyledLink>
+					<StyledLink to="https://profile.intra.42.fr/users/anrechai" target="_blank">anrechai</StyledLink>
 				</NamesContainer>
 			</Container>);
 }
