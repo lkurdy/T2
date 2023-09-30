@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import BtnHome from '../../assets/btn-home.png';
 import BtnPlay from '../../assets/btn-play.png';
 import BtnChat from '../../assets/btn-chat.png';
-import BtnProfile from '../../assets/btn-profile.jpg';
+import BtnProfile from '../../assets/btn-profile.png';
 import { Link } from 'react-router-dom';
 
 const Container = styled.header`
