@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import ErrorGif from '../../assets/error404.gif'
+import { useEffect } from 'react';
 
 const Container = styled.main`
 	display: flex;
@@ -23,6 +24,10 @@ const SubTitle = styled.h2`
 
 function Error()
 {
+	useEffect(() => {
+		document.title = '404Error - ft_transcendence';
+	}, []);
+
 	return (<Container>
 				<ErrorLogo src={ErrorGif} alt='error404.gif' />
 				<Title>

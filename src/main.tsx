@@ -1,28 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { createGlobalStyle } from 'styled-components'
+import GlobalStyle from './utils/styles/GlobalStyle.tsx'
 
-import Error from './pages/Error';
-import Home from './pages/Home';
+import Error from './pages/Error/';
+import Home from './pages/Home/';
+import Game from './pages/Game/';
+import Chat from './pages/Chat/';
+import Profile from './pages/Profile/';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Background from './assets/background.gif'
-
-const GlobalStyle = createGlobalStyle`
-	@font-face {
-		font-family: 'PixelFont';
-		src: url('./PixelFont.ttf') format('truetype');
-	}
-	* {
-		color: white;
-	}
-	body {
-		background: url(${Background});
-		margin: 0;
-		font-family: 'PixelFont', sans-serif;
-	}`
+import Header from './components/Header/';
+import Footer from './components/Footer/';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
@@ -34,6 +22,9 @@ root.render(
 			<Routes>
 				<Route path="*" element={<Error />} />
 				<Route path="/" element={<Home />} />
+				<Route path="/game" element={<Game />} />
+				<Route path="/chat" element={<Chat />} />
+				<Route path="/profile" element={<Profile />} />
 			</Routes>
 			<Footer />
 		</Router>

@@ -9,16 +9,16 @@ const Container = styled.main`
 	text-align: center;
 	font-size: 55px`
 
-function Home() {
+function Profile() {
 	useEffect(() => {
-		document.title = 'Home - ft_transcendence';
+		document.title = 'Profile - ft_transcendence';
 	}, []);
 
   return (
     <Container>
-		Welcome to our ft_transcendence !
+		Profile
     </Container>
   );
 }
 
-export default Home;
+export default Profile;

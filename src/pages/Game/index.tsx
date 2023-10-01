@@ -9,16 +9,16 @@ const Container = styled.main`
 	text-align: center;
 	font-size: 55px`
 
-function Home() {
+function Game() {
 	useEffect(() => {
-		document.title = 'Home - ft_transcendence';
+		document.title = 'Game - ft_transcendence';
 	}, []);
 
   return (
     <Container>
-		Welcome to our ft_transcendence !
+		Game
     </Container>
   );
 }
 
-export default Home;
+export default Game;

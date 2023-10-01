@@ -58,7 +58,7 @@ function Header() {
 					<NavLogo src={BtnChat} />
 					Chat
 				</StyledLink>
-				<StyledLink to="/game">
+				<StyledLink to="/profile">
 					<NavLogo src={BtnProfile} />
 					Profile
 				</StyledLink>
