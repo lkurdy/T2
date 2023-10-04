@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "App.js", "src/components/Pong/box.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

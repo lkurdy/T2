@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import { useEffect } from 'react';
+import Pong from '../../components/Pong/';
 
 const Container = styled.main`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
-	font-size: 55px`
+	text-align: center;`
 
 function Game() {
 	useEffect(() => {
@@ -16,7 +16,7 @@ function Game() {
 
   return (
     <Container>
-		Game
+		<Pong />
     </Container>
   );
 }
