@@ -75,8 +75,7 @@ const outer = {
     display: "flex",
     flexDirection: "column",
     justifyContent: "justify", 
-    marginTop: "-9em",
-    marginLeft: "-20em",
+    marginLeft: "-15em",
     Text: "100px",
     padding: "10px"
 }

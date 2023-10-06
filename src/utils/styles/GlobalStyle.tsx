@@ -8,11 +8,15 @@ const GlobalStyle = createGlobalStyle`
 	}
 	* {
 		color: white;
+		text-decoration: none;
+		&::selection {
+			background-color: transparent;
 	}
 	body {
 		background: url(${Background});
 		margin: 0;
 		font-family: 'PixelFont', sans-serif;
+		}
 	}`
 
 export default GlobalStyle;

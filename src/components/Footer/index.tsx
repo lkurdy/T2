@@ -8,19 +8,16 @@ const Container = styled.footer`
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	font-size: 18px;`
+	font-size: 17px;`
 
 const NamesContainer = styled.div`
 	display: flex;
 	flex-direction: row;`
 
 const StyledLink = styled(Link)`
-	text-decoration: none;
-	font-size: 18px;
-	margin-top: 10px;
+	font-size: 15px;
 	padding: 15px;
-	transition: font-size 0.2s;
-	&:hover{font-size: 20px}`
+	&:hover{color: darkgrey;}`
 
 function Footer()
 {

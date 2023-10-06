@@ -10,7 +10,7 @@ const Container = styled.main`
 
 const ErrorLogo = styled.img`
 	max-width: 800px;
-	margin-top: -200px;
+	margin-top: -60px;
 `
 
 const Title = styled.h1`
@@ -29,7 +29,7 @@ function Error()
 	}, []);
 
 	return (<Container>
-				<ErrorLogo src={ErrorGif} alt='error404.gif' />
+				<ErrorLogo src={ErrorGif} alt='ErrorGif' />
 				<Title>
 					Page not found
 				</Title>

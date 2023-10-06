@@ -8,29 +8,31 @@ const Container = styled.main`
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	font-size: 55px`
+	margin-top: 30px;
+`
 
 const Title = styled.h1`
 	font-size: 60px;
 	font-weight: 300;
-	margin-top: -10px
 `
 
 const SubTitle = styled.h2`
 	font-size: 30px;
 	font-weight: 300;
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 `
 
 const StyledLink = styled(Link)`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-decoration: none;
 	font-size: 40px;
 	padding: 5px 20px;
 	border: 2px solid white;
 	border-radius: 50px;
+	text-shadow: 2px 2px 4px black;
+	background: linear-gradient(0.5turn, transparent, darkgrey);
+	&:hover{background: linear-gradient(0turn, transparent, grey);}
 `;
 
 function Home() {

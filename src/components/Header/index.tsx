@@ -13,10 +13,6 @@ const Container = styled.header`
 const HomeLogo = styled.img`
 	height: 160px;
 	margin-top: -50px;
-	transition: height 0.2s;
-	&:hover {
-		height: 165px;
-		}
 `;
 
 const NavContent = styled.nav`
@@ -26,40 +22,38 @@ const NavContent = styled.nav`
 `;
 
 const StyledLink = styled(Link)`
-	text-decoration: none;
 	font-size: 18px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-right: 25px;
-	margin: 100px 25px;
+	padding-right: 50px;
+	margin-top: 100px;
+	margin-left: 25px;
 `;
 
 const NavLogo = styled.img`
 	height: 60px;
 	transition: height 0.2s;
-	&:hover {
-		height: 65px;
-		}
+	&:hover {height: 70px;}
 `;
 
 function Header() {
 	return (
 		<Container>
 			<StyledLink to="/">
-				<HomeLogo src={BtnHome} />
+				<HomeLogo src={BtnHome} alt='BtnHome' />
 			</StyledLink>
 			<NavContent>
 				<StyledLink to="/game">
-					<NavLogo src={BtnPlay} />
+					<NavLogo src={BtnPlay} alt='BtnPlay' />
 					Play
 				</StyledLink>
 				<StyledLink to="/chat">
-					<NavLogo src={BtnChat} />
+					<NavLogo src={BtnChat} alt='BtnChat' />
 					Chat
 				</StyledLink>
 				<StyledLink to="/profile">
-					<NavLogo src={BtnProfile} />
+					<NavLogo src={BtnProfile} alt='BtnProfile' />
 					Profile
 				</StyledLink>
 			</NavContent>
