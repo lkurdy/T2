@@ -16,16 +16,13 @@ const Title = styled.h1`
 	font-weight: 300;
 `
 
-const SubTitle = styled.h2`
+const SubTitle = styled.p`
 	font-size: 30px;
 	font-weight: 300;
 	margin-bottom: 60px;
 `
 
 const StyledLink = styled(Link)`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	font-size: 40px;
 	padding: 5px 20px;
 	border: 2px solid white;
