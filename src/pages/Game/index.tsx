@@ -42,8 +42,8 @@ const MenuButton = styled.button`
 	border-radius: 5px;
 	cursor: pointer;
 	text-shadow: 2px 2px 4px black;
-	background: linear-gradient(0.5turn, transparent, darkgrey);
-	&:hover{background: linear-gradient(0turn, transparent, grey);}
+	background: linear-gradient(0.5turn, transparent, dimgrey);
+	&:hover{background: linear-gradient(0turn, transparent, dimgrey);}
 `;
 
 const Description = styled.p`
@@ -54,8 +54,8 @@ const PrevLink = styled.button`
 	font-size: 18px;
 	border-radius: 5px;
 	text-shadow: 2px 2px 4px black;
-	background: linear-gradient(0.5turn, darkgrey, grey);
-	&:hover{background: linear-gradient(0turn, darkgrey, dimgrey);}
+	background: linear-gradient(0.5turn, grey, dimgrey);
+	&:hover{background: linear-gradient(0turn, grey, dimgrey);}
 	cursor: pointer;
 `
 
