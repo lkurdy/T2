@@ -4,6 +4,7 @@ import BtnPlay from '../../assets/btn-play.png';
 import BtnChat from '../../assets/btn-chat.png';
 import BtnProfile from '../../assets/btn-profile.png';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Container = styled.header`
 	display: flex;
@@ -37,7 +38,10 @@ const NavLogo = styled.img`
 	&:hover {height: 70px;}
 `;
 
+
+
 function Header() {
+	const [isLogged, setIsLogged] = useState(false);
 	return (
 		<Container>
 			<StyledLink to="/">
@@ -54,7 +58,7 @@ function Header() {
 				</StyledLink>
 				<StyledLink to="/profile">
 					<NavLogo src={BtnProfile} alt='BtnProfile' />
-					Profile
+					{isLogged ? 'Profile' : 'Login'}
 				</StyledLink>
 			</NavContent>
 		</Container>
